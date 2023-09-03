@@ -11,7 +11,7 @@ from rest_framework.filters import SearchFilter
 from rest_framework.views import APIView
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import generics, status
-from geopy.distance import distance
+# from geopy.distance import distance
 from django.shortcuts import get_object_or_404
 
 
