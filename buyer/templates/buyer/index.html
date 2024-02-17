@@ -7,23 +7,8 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Sameep</title>
+  <title>Hyper-Local On-Demand Marketplace</title>
   <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
-  <meta
-    content="Shop locally with Sameep and support small businesses"
-    name="description" />
-  <meta content="Sameep | Hyper Logistic" property="og:title" />
-  <meta
-    content="Convert visitors into customers through powerful positioning and crystal-clear messaging. Use Lander as a copywriting template to communicate your value to your audience"
-    property="og:description" />
-  <meta content="https://uploads-ssl.webflow.com/5ea1b995c6b4c10f74406a08/5ea1f11934a4540f7b574e9f_product-shot.png"
-    property="og:image" />
-  <meta content="Lander | Landing Page Copywriting Template" property="twitter:title" />
-  <meta
-    content="Convert visitors into customers through powerful positioning and crystal-clear messaging. Use Lander as a copywriting template to communicate your value to your audience"
-    property="twitter:description" />
-  <meta content="https://uploads-ssl.webflow.com/5ea1b995c6b4c10f74406a08/5ea1f11934a4540f7b574e9f_product-shot.png"
-    property="twitter:image" />
   <meta property="og:type" content="website" />
   <meta content="summary_large_image" name="twitter:card" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -65,11 +50,11 @@
 
 <body>
   <header class="nav">
-    <div class="container">
+    <div class="container" style="border-radius: 0;">
       <div class="row items-center mb-lg">
         <div class="column align-left">
-          <a href="#" aria-current="page" class="w-inline-block w--current">
-            <div class="logo" style="height: 51px;"><img style="height: 100%;" src ={% static 'images/Group2430.svg' %}/> Sameep</div>
+          <a href="https://phalesh.netlify.app/" aria-current="page" class="w-inline-block w--current">
+            <div class="logo" style="height: 51px;"><img style="height: 100%;" src ={% static 'images/logo193.png' %}/> Phalesh</div>
           </a>
         </div>
         <!-- <div class="column align-right">
@@ -85,241 +70,17 @@
     <div class="container mt-3xl mb-3xl">
       <div class="row">
         <div class="column align-center">
-          <h1 class="test-giga text-center">Shop locally with Sameep and support small businesses.
-</h1>
-          <p class="text-lg text-center max-w-lg"> Discover nearby shops and their products, all in one app. Sameep makes it easy to shop local, supporting your community while finding unique items you won&#39;t find anywhere else.</p>
-          <a href="#" class="button xl main mt-lg w-button"> Download the app now.</a>
+          <h1 class="test-giga text-center">Hyper-Local On-Demand Marketplace</h1>
+          <p class="text-lg text-center max-w-lg">This backend project draws inspiration from platforms such as Dunzo and Blinkit. It encompasses many of their fundamental features. The backend architecture is constructed using Django, Firebase Messaging Service, and is adaptable to various SQL databases.</p>
+          <br>  
+          <a href="{% url 'database' %}" class="button xl main mt-lg w-button"> Database ERD</a>
+          <a href="{% url 'schema-swagger-ui' %}" class="button xl main mt-lg w-button"> API's</a>
         </div>
       </div>
     </div>
     <div class="circle"></div>
   </div>
-  <div class="section">
-    <img src={% static 'images/product-shot.png' %} srcset="
-    {% static 'images/product-shot-p-500.png' %}  500w,
-    {% static 'images/product-shot-p-800.png' %} 800w,
-    {% static 'images/product-shot-p-1080.png' %} 1080w,
-    {% static 'images/product-shot.png' %} 1521w
-      " sizes="(max-width: 479px) 93vw, (max-width: 767px) 94vw, 720px"
-      data-w-id="a4177896-a5e5-6c6a-0980-01ce8ea2054a" style="opacity: 0" alt="" class="product-shot" />
-  </div>
-  <div class="section">
-    <div class="container mt-2xl mb-2xl">
-      <div class="row">
-        <div class="column align-center">
-          <h2 class="max-w-lg text-center">Discover Local Shops and Products with Sameep.
-</h2>
-          <p class="text-lg text-center max-w-md">
-             Say goodbye to the hassle of searching for local shops and products. With Sameep, you can easily find nearby stores and purchase what you need from the comfort of your own home. Plus, sellers can list their shops and reach a wider audience. It&#39;s a win-win situation for everyone involved!
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section">
-    <div class="container">
-      <div class="row items-center v-t">
-        <div class="column align-left p-2xl">
-          <h6 class="max-w-lg">#1 Feature</h6>
-          <h2 class="max-w-lg">Shop Local, Shop Smart with Sameep.
-</h2>
-          <p class="text-lg"> Say goodbye to the hassle of searching for local shops and products. Sameep connects you to nearby sellers with just a few clicks. Download our app now and experience the convenience of hyper-local shopping!</p>
-        </div>
-        <div class="column align-center p-2xl">
-          <img src={% static 'images/marginalia-coming-soon.png' %} alt="" class="feature-card" />
-        </div>
-      </div>
-      <div class="row reverse items-center v-t">
-        <div class="column align-left p-2xl">
-          <h6 class="max-w-lg">#2 Feature</h6>
-          <h2 class="max-w-lg">Discover hidden gems in your city with Sameep.
-</h2>
-          <p class="text-lg"> Tired of shopping at the same old stores? Sameep brings you a variety of product categories and circular sections, so you can discover new shops and hidden gems in your city. Whether you&#39;re looking for unique gifts or everyday essentials, Sameep has got you covered. Shop local and support your community today!</p>
-        </div>
-        <div class="column align-center p-2xl">
-          <img src={% static 'images/marginalia-online-shopping.png' %} alt="" class="feature-card" />
-        </div>
-      </div>
-      <div class="row items-center v-t">
-        <div class="column align-left p-2xl">
-          <h6 class="max-w-lg">#3 Feature</h6>
-          <h2 class="max-w-lg">Shop local and support your community with Sameep.
-</h2>
-          <p class="text-lg"> With Sameep, you can easily find and support local businesses in your community. Our &#34;how it works&#34; section makes it easy to navigate the app and start shopping at your favorite local shops. Plus, our footer provides quick access to all the information you need. Join us in supporting local businesses today!</p>
-        </div>
-        <div class="column align-center p-2xl">
-          <img src={% static 'images/marginalia-order-complete.png' %} alt="" class="feature-card" />
-        </div>
-      </div>
-    </div>
-  </div>
-<div class="seller">
-  <h1 class="test-giga text-center">For Sellers</h1>
-  <div class="container"
-  style="left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, 0%);"> 
-  <div class="slider">
 
-      <div class="box1 box">
-          <div class="bg"></div>
-          <div class="details">
-              <h1>Download Sameep</h1>
-              <p class="text-lg">
-                Download the Sameep application from the official app store for your device              </p>
-              <button>Check Now</button>
-          </div>
-
-          <div class="illustration"><div class="inner"><img src={% static 'images/65968-removebg-preview.png' %} style="
-            height: 25rem;
-            width: 18rem;"></div></div>      </div>
-                      
-      
-      <div class="box2 box">
-          <div class="bg"></div>
-          <div class="details">
-              <h1>Register as a Seller</h1>
-              <p class="text-lg">
-                Launch the Sameep app and sign up as a seller.
-              </p>
-              <button>Check Now</button>
-          </div>
-
-          <div class="illustration"><div class="inner"><img src={% static 'images/65968-removebg-preview.png' %} style="
-            height: 25rem;
-            width: 18rem;"></div></div>      </div>
-                      
-      <div class="box3 box">
-          <div class="bg"></div>
-          <div class="details">
-              <h1>Create Seller Profile</h1>
-              <p class="text-lg">
-                After successful registration, log in to the Sameep app as a seller. Fill in your seller profile information, including your shop name, GST number, address, and other relevant details.
-              </p>
-              <button>Check Now</button>
-          </div>
-
-          <div class="illustration"><div class="inner"><img src={% static 'images/65968-removebg-preview.png' %} style="
-            height: 25rem;
-            width: 18rem;"></div></div>      </div>
-                      
-      <div class="box4 box">
-          <div class="bg"></div>
-          <div class="details">
-              <h1>List Products</h1>
-              <p class="text-lg">
-                Select products from the existing database by browsing categories and subcategories, or alternatively, add new products manually.
-                Provide necessary details for each product, such as title, description, images, pricing, and stock availability.
-              </p>
-              <button>Check Now</button>
-          </div>
-
-          <div class="illustration"><div class="inner"><img src={% static 'images/65968-removebg-preview.png' %} style="
-            height: 25rem;
-            width: 18rem;"></div></div>
-      </div>
-                      
-      <div class="box5 box">
-          <div class="bg"></div>
-          <div class="details">
-              <h1>Order Processing and Payment</h1>
-              <p class="text-lg">
-                When you receive an order notification, review the details, including the customer's shipping address and the products ordered.
-                Prepare the order by packaging the products securely for delivery.
-                Wait for Sameep's designated delivery agent to pick up the order from your specified location.
-                After successful delivery, the customer's payment will be processed by Sameep, and you will receive your payment for the order according to the agreed-upon payment terms.
-              </p>
-              <button>Check Now</button>
-          </div>
-
-          <div class="illustration"><div class="inner"><img src={% static 'images/65968-removebg-preview.png' %} style="
-            height: 25rem;
-            width: 18rem;"></div></div>      </div>
-                      
-  </div>
-
-  <svg xmlns="http://www.w3.org/2000/svg" class="prev" width="56.898" height="91" viewBox="0 0 56.898 91"><path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(0 91) rotate(-90)" fill="#fff"/></svg>
-  <svg xmlns="http://www.w3.org/2000/svg" class="next" width="56.898" height="91" viewBox="0 0 56.898 91"><path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(56.898) rotate(90)" fill="#fff"/></svg>
-  <div class="trail">
-          <div class="box1 active"></div>
-          <div class="box2"></div>
-          <div class="box3"></div>
-          <div class="box4"></div>
-          <div class="box5"></div>
-  </div>
-</div>
-</div>
-  <div class="section main mt-2xl">
-    <div class="container mt-2xl mb-2xl">
-      <div class="row items-center">
-        <div class="column align-center">
-          <h1 class="max-w-lg text-giga text-center text-white">Experience a new way of shopping with Sameep.
-</h1>
-          <a href="#" class="button xl main white mt-lg w-button"> Download the app now.</a>
-          <div class="faded text-sm mt-md">
-            14 day free trial • No credit card required
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section pb-2xl-m">
-    <div class="container mt-2xl mb-2xl">
-      <div class="row v-l">
-        <div class="column align-left">
-          <div class="emoji lg">🌎</div>
-          <a href="#" class="u mt-lg">info@email.com</a>
-          <div class="row mt-lg ml-md-n">
-            <a href="#" target="_blank" class="p-md w-inline-block"><img
-                src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg"
-                data-feather="twitter" alt="" class="icon" /></a><a href="#" target="_blank"
-              class="p-md w-inline-block"><img
-                src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg"
-                data-feather="instagram" alt="" class="icon" /></a><a href="#" target="_blank"
-              class="p-md w-inline-block"><img
-                src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg"
-                data-feather="linkedin" alt="" class="icon" /></a>
-          </div>
-        </div>
-        <div class="column align-left">
-          <h6 class="max-w-lg mb-xl footer-header">Company</h6>
-          <div>About</div>
-          <div class="mt-md">Customers</div>
-          <div class="mt-md">Jobs</div>
-          <div class="mt-md">Blog</div>
-        </div>
-        <div class="column align-left">
-          <h6 class="max-w-lg mb-xl footer-header">Contact</h6>
-          <div>Support</div>
-          <div class="mt-md">Sales</div>
-        </div>
-        <div class="column align-left">
-          <h6 class="max-w-lg mb-xl footer-header">Resources</h6>
-          <div>Podcast</div>
-          <div class="mt-md">Help Center</div>
-        </div>
-      </div>
-      <div class="border-t mt-xl">
-        <div class="row mt-xl v-l">
-          <div class="column align-left">
-            <div class="muted text-sm">
-              © No copyright I guess? Do whatever you want with the site
-            </div>
-          </div>
-          <div class="column align-right">
-            <div class="row">
-              <div class="muted text-sm mr-lg">Dummy links:</div>
-              <div><a href="#">Privacy Policy</a></div>
-              <div><a href="#" class="ml-lg">Terms and Conditions</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script src={% static 'js/script2.js' %}></script>
-  <script src={% static 'js/script3.js' %}></script>
-  <script src={% static 'js/script.js' %}></script>
 
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5ea1b995c6b4c10f74406a08"
     type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">

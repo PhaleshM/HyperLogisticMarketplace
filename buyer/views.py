@@ -191,3 +191,5 @@ def create_return_request(request, order_id, product_id):
 def index(request):
     return render(request, 'buyer/index.html', {})
 
+def database(request):
+    return render(request, 'buyer/database.html', {})
