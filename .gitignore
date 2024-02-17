@@ -6,3 +6,6 @@ Sameep/__pycache__
 *.pyc
 media
 credentials.json
+buyer/migrations
+delivery/migrations
+seller/migrations
