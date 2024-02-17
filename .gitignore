@@ -1,16 +1,8 @@
 # .gitignore
 env
 Sameep/__pycache__
-seller/migrations
-seller/.DS_Store
 Sameep/__pycache__
 .DS_Store
-buyer/migrations
-account/migrations
-delivery/migrations
-payments/migrations
-db.sqlite3
 *.pyc
 media
 credentials.json
-Sameep/settings.py
