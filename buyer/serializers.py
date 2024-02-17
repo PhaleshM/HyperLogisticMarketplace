@@ -6,32 +6,6 @@ from phonenumbers.phonenumberutil import is_valid_number, NumberParseException
 from .models import CustomerProfile, CartItem, Comment, Product,Cart,Listing, Order
 from account.serializers import AddressSerializer
 
-# class CustomerProfileSerializer(serializers.ModelSerializer):
-#     email = serializers.EmailField(source='user.email', read_only=True)
-
-#     class Meta:
-#         model = CustomerProfile
-#         fields = '__all__'
-#         #fields = ['email', 'phone_number', 'address', 'profile_picture']
-
-#     def validate_phone_number(self, value):
-#         """
-#         Custom validation for phone number field.
-#         Ensure that the phone number is not already registered and is in the Indian region.
-#         """
-#         # Check if the phone number is already registered
-#         if SellerProfile.objects.filter(phone_number=value).exists() and CustomerProfile.objects.filter(phone_number=value).exists():
-#             raise serializers.ValidationError("This phone number is already registered.")
-
-#         # Check if the phone number is in the Indian region and is valid
-#         try:
-#             parsed_number = parse_phone_number(value, "IN")
-#             if not is_valid_number(parsed_number):
-#                 raise serializers.ValidationError("The phone number entered is not valid for the Indian region.")
-#         except NumberParseException:
-#             raise serializers.ValidationError("The phone number entered is not valid.")
-
-#         return value
     
 # class CustomerProfileSerializer(serializers.ModelSerializer):
 #     email = serializers.EmailField(source='user.email', read_only=True)

@@ -113,7 +113,6 @@ class Product(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     order_count = models.IntegerField(default=0)  # Number of orders for the product
-    # keywords for products to be searched
 
     # Additional fields
     rating = models.FloatField(default=0.0)  # Rating of the product

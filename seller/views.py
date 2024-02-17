@@ -99,7 +99,9 @@ class SellerProfileCreateView(CreateAPIView):
         seller_profile.save()
 
         categories_data = serializer.validated_data.get("categories", [])
+        print("fgjjng",categories_data)
         categories = Categories.objects.filter(name__in=categories_data)
+        print("rffr",categories)
         seller_profile.categories.set(categories)
 
 class SellerProfileListAPI(ListAPIView):

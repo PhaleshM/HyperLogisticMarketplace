@@ -1,5 +1,5 @@
 # .gitignore
-/.venv
+env
 Sameep/__pycache__
 seller/migrations
 seller/.DS_Store
