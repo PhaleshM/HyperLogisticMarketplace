@@ -1,7 +1,7 @@
 from django.contrib import admin
 from account.models import User,Address,City,Region,AccountDetails
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
-from fcm_django.models import FCMDevice
+# from fcm_django.models import FCMDevice
 # class FCMDeviceAdmin(admin.ModelAdmin):
 #     list_display = ('name', 'user', 'device_id', 'active', 'type')
 

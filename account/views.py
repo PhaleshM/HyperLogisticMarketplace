@@ -10,7 +10,7 @@ from buyer.models import CustomerProfile
 from seller.models import SellerProfile
 from .serializers import SellerProfileSerializer, CustomerProfileSerializer
 from rest_framework_simplejwt.views import TokenRefreshView
-from fcm_django.models import FCMDevice
+# from fcm_django.models import FCMDevice
 
 
 # Function to generate tokens for a user
@@ -37,8 +37,8 @@ class UserRegistrationView(APIView):
 
         # Handle FCM token for user's device during registration
         fcm_device_token = request.data.get('fcm_device_token')
-        if fcm_device_token:
-            FCMDevice.objects.get_or_create(user=user, registration_id=fcm_device_token)
+        # if fcm_device_token:
+        #     FCMDevice.objects.get_or_create(user=user, registration_id=fcm_device_token)
             
         # Generate tokens for the user
         token = get_tokens_for_user(user)
@@ -60,10 +60,10 @@ class UserLoginView(APIView):
         if user is not None:
             # Handle FCM token for user's device during login
             fcm_device_token = request.data.get('fcm_device_token')
-            print("fddsfgfgf",fcm_device_token,"rfgrgregter")
-            if fcm_device_token:
-                print("fgfsdbdfs")
-                FCMDevice.objects.get_or_create(user=user, registration_id=fcm_device_token)
+            # print("fddsfgfgf",fcm_device_token,"rfgrgregter")
+            # if fcm_device_token:
+            #     print("fgfsdbdfs")
+            #     FCMDevice.objects.get_or_create(user=user, registration_id=fcm_device_token)
             # Generate tokens for the authenticated user
             token = get_tokens_for_user(user)
             role=user.role

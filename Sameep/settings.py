@@ -39,7 +39,7 @@ import os
 SECRET_KEY = 'django-insecure-zu1c@^z3^-p#aeiqkjb+9il^$i$22z(#iea5r9-#+!=_me-@q3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -64,7 +64,7 @@ INSTALLED_APPS = [
     'buyer',
     'seller',
     'delivery',
-    'fcm_django',
+    # 'fcm_django',
     # 'buyer.apps.BuyerConfig',
     # 'leaflet',
     # 'django.contrib.gis',
@@ -177,7 +177,7 @@ AUTH_USER_MODEL = 'account.User'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
